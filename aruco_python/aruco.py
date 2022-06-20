@@ -7,16 +7,16 @@ from PIL import Image
 from mpl_toolkits.mplot3d import Axes3D
 
 #素材
-im1 = np.array(Image.open('src/shisa1.jpg'))
-im2 = np.array(Image.open('src/shisa2.jpg'))
+im1 = np.array(Image.open('eulerAngle/aruco_python/src/shisa1.jpg'))
+im2 = np.array(Image.open('eulerAngle/aruco_python/src/shisa2.jpg'))
 # im3 = np.array(Image.open('src/und.bmp'))
 # im3 = im3[..., :3]
 # print(im1.shape, im2.shape, im3.shape) # (1920, 1080, 3)
 
 marker_length = 0.07 # [m] ### 注意！
 
-mtx = np.load("camera/mtx.npy")
-dist = np.load("camera/dist.npy")
+mtx = np.load("'eulerAngle/aruco_python/camera/mtx.npy")
+dist = np.load("'eulerAngle/aruco_python/camera/dist.npy")
 # print(mtx); print(dist)
 
 aruco_dict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_4X4_50)
